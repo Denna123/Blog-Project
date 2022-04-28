@@ -1,7 +1,13 @@
-<%- include("header") -%>
 
+<%- include('partials/header.ejs'); -%>
 
-<div>Compose here</div>
+<h1>Compose</h1>
 
+<form action="/">
 
-<%- include("footer") -%>
+    <input type="text">
+<button type="submit" name="button" placeholder="">Publish</button>
+
+</form>
+
+<%- include("partials/footer.ejs") -%>
