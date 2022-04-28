@@ -4,4 +4,19 @@
 
 <div>Post here</div>
 
+<div class="box">
+    <% for (var i=0; i<newPostItems.length; i++) { %>
+    <div class="post">
+        <input type="checkbox">
+        <p> <%= newPostItems[i] %> </p>
+    </div>    
+    <% } %>
+
+
+    <form action="/" method="post" class="post">
+        <input type="text" name="newPost" placeholder="" autocomplete="off">
+        <button type="submit" name="post" value=<%= postTitle %>>+</button>
+    </form>
+</div>
+
 <%- include("partials/footer.ejs") -%>
